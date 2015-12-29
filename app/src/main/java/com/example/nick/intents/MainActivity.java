@@ -1,4 +1,4 @@
-package com.example.nick.intents;
+package com.example.user.intents;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -35,18 +35,18 @@ public class MainActivity extends Activity implements OnClickListener {
         Intent intent;
         switch (v.getId()) {
             case R.id.btnWeb:
-                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://promodj.com/Kolegio"));
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://vk.com/id26088123"));
                 startActivity(intent);
                 break;
             case R.id.btnMap:
                 intent = new Intent();
                 intent.setAction(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("geo:52.726606, 103.666488"));
+                intent.setData(Uri.parse("52.249977, 104.264320"));
                 startActivity(intent);
                 break;
             case R.id.btnCall:
                 intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel:+79246290993"));
+                intent.setData(Uri.parse("tel:+79041261976"));
                 startActivity(intent);
                 break;
         }
